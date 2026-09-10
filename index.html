@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🏦 Bank Management System</h1>
+            <p>Welcome, Soni..</p>
+        </header>
+
+        <main>
+
+            <section class="balance-card">
+                <div class="account-info">
+                    <p>Account Holder</p>
+                    <strong>Soni Kumari</strong>
+
+                    <p>Account Number</p>
+                    <strong>123456789012</strong>
+
+                    <p>Available Balance</p>
+                    <h2 id="balance">₹5,000.00</h2>
+                </div>
+            </section>
+
+            <section class="actions">
+
+                <div class="action-card">
+                    <h3>💰 Deposit Money</h3>
+                    <input type="number" id="depositAmount" placeholder="Enter amount">
+                    <button onclick="deposit()">Deposit</button>
+                </div>
+
+                <div class="action-card">
+                    <h3>💸 Withdraw Money</h3>
+                    <input type="number" id="withdrawAmount" placeholder="Enter amount">
+                    <button onclick="withdraw()">Withdraw</button>
+                </div>
+
+            </section>
+            
+            <div id="message"></div>
+            <section class="transactions">
+                <h2>📜 Transaction History</h2>
+
+                <div id="transactionList">
+                    <p>No transactions yet.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Bank Management System • Java Project</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
